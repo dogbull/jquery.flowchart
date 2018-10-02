@@ -979,6 +979,10 @@ $(function () {
             return data;
         },
 
+        getDataRef: function () {
+            return this.data;
+        },
+
         setOperatorTitle: function (operatorId, title) {
             this.data.operators[operatorId].internal.els.title.html(title);
             if (typeof this.data.operators[operatorId].properties == 'undefined') {
